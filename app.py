@@ -23,6 +23,7 @@ class ContextChatbot:
     
     @utils.enable_chat_history
     def main(self):
+        st.markdown(st.secrets["TESTING"])
         chain = self.setup_chain()
         user_query = st.chat_input(placeholder="Ask me anything!")
         if user_query:
