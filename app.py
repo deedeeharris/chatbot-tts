@@ -42,4 +42,14 @@ with col1:
 
 with col2:
     st.title("Avatar")
-    st.video(sacks_video_bytes, loop=True)
+    #st.video(sacks_video_bytes, loop=True)
+
+    video_html = """
+                <video controls width="250" autoplay="true" muted="true" loop="true">
+                <source 
+                            src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" 
+                            type="video/mp4" />
+                </video>
+    
+            """
+    st.markdown(video_html, unsafe_allow_html=True)
