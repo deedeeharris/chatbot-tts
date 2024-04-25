@@ -5,7 +5,9 @@ import time
 st.set_page_config(layout="wide")
 
 # Define the avatar video URL
-avatar_video_url = "sacks.mp4"
+video_file = open('sacks.mp4', 'rb')
+sacks_video_bytes = video_file.read()
+
 
 # Render the chatbox and avatar
 col1, col2 = st.columns(2)
@@ -40,4 +42,4 @@ with col1:
 
 with col2:
     st.title("Avatar")
-    st.video(avatar_video_url, start_time=0, loop_start=0, loop_end=0, format="mp4", width=300, height=300)
+    st.video(sacks_video_bytes, start_time=0, loop_start=0, loop_end=0, format="mp4", width=300, height=300)
