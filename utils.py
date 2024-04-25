@@ -46,7 +46,7 @@ def configure_openai():
         type="password",
         value=st.session_state['OPENAI_API_KEY'] if 'OPENAI_API_KEY' in st.session_state else '',
         placeholder="sk-..."
-    #     )
+     )
     #openai_api_key = st.secrets["OPENAI_API_KEY"]
     if openai_api_key:
         st.session_state['OPENAI_API_KEY'] = openai_api_key
