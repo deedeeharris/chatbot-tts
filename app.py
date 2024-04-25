@@ -44,7 +44,7 @@ with col2:
     #st.video(sacks_video_bytes, loop=True)
 
     video_html = """
-                <video controls width="250" autoplay="true" muted="true" loop="true">
+                <video controls width="250" autoplay="true" muted="true" loop="true" controls="false">
                 <source 
                             src="https://github.com/deedeeharris/chatbot-tts/raw/main/sacks.mp4" 
                             type="video/mp4" />
