@@ -42,4 +42,4 @@ with col1:
 
 with col2:
     st.title("Avatar")
-    st.video(sacks_video_bytes)
+    st.video(sacks_video_bytes, loop=True)
